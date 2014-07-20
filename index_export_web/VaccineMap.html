@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Napkee export</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/datepicker.css">
+	<link rel="stylesheet" href="css/colorpicker.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/smoothness/jquery-ui-1.10.3.custom.min.css">
+	<link rel="stylesheet" href="css/jquery.orgchart.css">
+	<link rel="stylesheet" href="css/jquery.treeview.css">
+	
+	
+	<style type="text/css">
+	#napkeeCanvas {
+		position:absolute;
+		left:0px;
+		top:0px;
+	}
+	.napkeeComponent {
+		position:absolute;
+		white-space: nowrap;
+	}
+	.napkeeRelativeComponent {
+		position:absolute;
+		white-space: nowrap;
+	}
+	
+	
+#nap6{
+	left:101px;
+	top:501px;
+	width:300px;
+	z-index:1;
+	font-size: 16px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap9{
+	left:367px;
+	top:1161px;
+	width:363.00000000000006px;
+	height:21px;
+	z-index:2;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap10{
+	left:422px;
+	top:501px;
+	width:524px;
+	height:402px;
+	z-index:3;
+}
+	
+#nap11{
+	left:422px;
+	top:903px;
+	width:524px;
+	height:160px;
+	z-index:4;
+	background-color:#FFF;
+	margin-left:0;
+}
+	
+#nap17{
+	left:50px;
+	top:131px;
+	width:960px;
+	height:210px;
+	z-index:5;
+	border:0px solid;
+}
+
+#nap17table{
+	left:50px;
+	top:131px;
+	width:960px;
+	height:210px;
+	z-index:6;
+	display:none;
+}
+
+#nap17label{
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+}
+	
+#nap18{
+	left:50px;
+	top:352px;
+	width:960px;
+	height:50px;
+	z-index:6;
+	font-size: 20px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+#nap18 li {
+	width:134px;
+	height:50px;
+	line-height:50px;
+}
+#nap18 li a{
+	text-decoration:none;
+}
+	
+#nap21{
+	left:479px;
+	top:175px;
+	z-index:7;
+}
+
+#nap21.napkee {
+	width:133px;
+	height:107px;
+	background-color:#FFFFFF;
+	color:#000000;
+	opacity:1.0;
+	filter:alpha(opacity=100);
+}
+	
+#nap25{
+	left:101px;
+	top:554px;
+	width:300px;
+	height:509px;
+	z-index:8;
+	background-color:#FFFFFF;
+	opacity:1.0;
+	filter:alpha(opacity=100);
+	border:1px solid #000;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+}
+	
+#nap26{
+	left:520px;
+	top:399px;
+	width:185px;
+	height:41px;
+	z-index:9;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+#nap26 li {
+	width:66px;
+	height:41px;
+	line-height:41px;
+}
+#nap26 li a{
+	text-decoration:none;
+}
+	
+#nap27{
+	left:785px;
+	top:92px;
+	z-index:10;
+}
+
+#nap27.napkee {
+	width:54px;
+	height:27px;
+	font-size: 16px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap28{
+	left:854px;
+	top:92px;
+	z-index:11;
+}
+
+#nap28.napkee {
+	width:54px;
+	height:27px;
+	font-size: 16px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap29{
+	left:920px;
+	top:92px;
+	z-index:12;
+}
+
+#nap29.napkee {
+	width:86px;
+	height:27px;
+	font-size: 16px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap30{
+	left:51px;
+	top:101px;
+	width:327px;
+	height:35px;
+	z-index:13;
+	font-size: 32px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:center;
+	color:#000000;
+}
+	
+	</style>
+	
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="js/jquery.migration.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.swfobject.1-0.5.min.js"></script>
+    <script src="js/swfobject.js"></script>
+    <script src="js/jquery.sparkline.min.js"></script>
+    <script src="js/bootstrap-colorpicker.js"></script>
+    <script src="js/jquery.tools.min.js"></script>
+    <script src="js/holder.js"></script>
+    <script src="js/jquery.orgchart.min.js"></script>
+    <script src="js/jquery.treeview.min.js"></script>
+    <script src="js/jquery.tagcloud.min.js"></script>
+	
+  </head>
+  <body>
+  
+	
+
+
+	
+<select id="nap6" class="napkeeComponent napkeeCombobox">
+<option>請選擇地區</option>
+</select>
+	
+<span id="nap9" class="napkeeComponent napkeeLabel ">Shin Hsin University &ndash; ICS100th &ndash; All Mommy Baby Home</span>
+	
+<iframe id="nap10" src="http://www.napkee.com/components/NapkeeHostedMaps/?loc=Vienna, Austria" class="napkeeComponent napkeeMap"></iframe>
+	
+<div id="nap11" class="napkeeComponent napkeeTitlewindow modal">
+	
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h3>名稱／地址／聯絡電話／備註</h3>
+	</div>
+	<div class="modal-body" style="max-height:80px;min-height:80px">
+    </div>
+    <div class="modal-footer ">
+	</div>
+</div>	
+	
+<img id="nap17" src="js/holder.js/960x210" class="napkeeComponent napkeeImage" />
+<table border="0" id="nap17table" class="napkeeComponent napkeeImageTable" >
+	<tr>
+		<td align="center" valign="middle">
+			<span id="nap17label" class="napkeeImageLabel"></span>
+		</td>
+	</tr>
+</table>
+
+	
+<div id="nap18" class="btn-group napkeeComponent napkeeButtonbar">
+<a class="btn" href="#" id="nap18i0">寶寶食譜</a><a class="btn" href="#" id="nap18i1">用品清單</a><a class="btn" href="#" id="nap18i2">健康須知</a><a class="btn" href="#" id="nap18i3">疫苗資訊</a><a class="btn" href="#" id="nap18i4">寶寶紀錄</a><a class="btn" href="#" id="nap18i5">App下載</a>
+</div>
+	
+<button id="nap21" class="napkeeComponent napkeeMultilineButton btn"> 
+   <span>LOGO<br/><small>Home</small> 
+</button> 
+	
+<div id="nap25" class="napkeeComponent napkeeCanvas"></div>
+	
+<div id="nap26" class="btn-group napkeeComponent napkeeButtonbar">
+<a class="btn active" href="#" id="nap26i0">地點查詢</a><a class="btn" href="#" id="nap26i1">接種時程表</a>
+</div>
+	
+<button id="nap27" type="button" class="napkeeComponent napkeeButton btn">註冊</button>
+	
+<button id="nap28" type="button" class="napkeeComponent napkeeButton btn">登入</button>
+	
+<button id="nap29" type="button" class="napkeeComponent napkeeButton btn">關於我們</button>
+	
+<span id="nap30" class="napkeeComponent napkeeTitle">All Mommy Baby Home</span>
+	
+	
+    <script type="text/javascript" charset="utf-8">
+	    function showMockup(url,params){
+			var finalUrl = url + "?";
+			if (params!=null){
+				jQuery.each(params, function(par, field){
+					finalUrl += par + "=" + $("#"+field).val() + "&";
+				});
+			}
+			location.href = finalUrl;
+		}
+		$(document).ready(function(){
+			$(".accordion").each(function(){
+				var _acc = $(this);
+				_acc.find(".accordion-inner").height(_acc.height() - (_acc.find(".accordion-inner").length * 36));
+			});
+			$(document).on("click", function(e){
+				$("[data-date]").datepicker('show');
+			});
+		
+			
+$("#nap6").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap9").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+	
+
+	
+$("#nap17").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+
+$("#nap18").click(function(event){
+});
+
+$("#nap18i0").click(function(event){
+	showMockup('Recipe.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap18i1").click(function(event){
+	showMockup('List.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap18i2").click(function(event){
+	showMockup('HealthGrowth.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap18i3").click(function(event){
+	showMockup('VaccineMap.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap18i4").click(function(event){
+	showMockup('Recordinput1.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap18i5").click(function(event){
+	showMockup('Appdownload.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+	
+$("#nap21").click(function(event){
+});
+	
+$("#nap25").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+
+$("#nap26").click(function(event){
+});
+
+$("#nap26i0").click(function(event){
+	showMockup('VaccineMap.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap26i1").click(function(event){
+	showMockup('VaccineTimeline.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+	
+$("#nap27").click(function(event){
+	showMockup('Register.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap28").click(function(event){
+	showMockup('Login.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap29").click(function(event){
+	showMockup('About.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap30").click(function(event){
+	showMockup('index.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+		});
+	</script>
+  </body>
+</html>
