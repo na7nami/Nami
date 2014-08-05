@@ -119,32 +119,12 @@
 }
 
 	
-#nap6{
-	left:52px;
-	top:352px;
-	width:960px;
-	height:50px;
-	z-index:6;
-	font-size: 20px;
-	font-style:normal;
-	font-weight:normal;
-	text-decoration:none;
-}
-#nap6 li {
-	width:134px;
-	height:50px;
-	line-height:50px;
-}
-#nap6 li a{
-	text-decoration:none;
-}
-	
 #nap7{
 	left:369px;
 	top:1181px;
 	width:363.00000000000006px;
 	height:21px;
-	z-index:7;
+	z-index:6;
 	font-size: 14px;
 	font-style:normal;
 	font-weight:normal;
@@ -153,52 +133,12 @@
 	color:#000000;
 }
 	
-#nap11{
-	left:199px;
-	top:762px;
-	width:177px;
-	height:146px;
-	z-index:8;
-}
-	
-#nap12{
-	left:452px;
-	top:762px;
-	width:177px;
-	height:146px;
-	z-index:9;
-}
-	
-#nap13{
-	left:699px;
-	top:762px;
-	width:177px;
-	height:146px;
-	z-index:10;
-}
-	
-#nap14{
-	left:199px;
-	top:963px;
-	width:177px;
-	height:146px;
-	z-index:11;
-}
-	
-#nap15{
-	left:452px;
-	top:963px;
-	width:177px;
-	height:146px;
-	z-index:12;
-}
-	
 #nap16{
-	left:306px;
-	top:453px;
-	width:468px;
-	height:256px;
-	z-index:13;
+	left:239px;
+	top:449px;
+	width:600px;
+	height:320px;
+	z-index:7;
 }
 	
 #nap17{
@@ -206,13 +146,41 @@
 	top:101px;
 	width:327px;
 	height:35px;
-	z-index:14;
+	z-index:8;
 	font-size: 32px;
 	font-style:normal;
 	font-weight:normal;
 	text-decoration:none;
 	text-align:center;
 	color:#000000;
+}
+	
+#nap18{
+	left:164px;
+	top:825px;
+	width:740px;
+	height:300px;
+	z-index:9;
+}
+	
+#nap19{
+	left:51px;
+	top:353px;
+	width:960px;
+	height:50px;
+	z-index:10;
+	font-size: 20px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+#nap19 li {
+	width:134px;
+	height:50px;
+	line-height:50px;
+}
+#nap19 li a{
+	text-decoration:none;
 }
 	
 	</style>
@@ -259,25 +227,17 @@
 	
 <button id="nap5" type="button" class="napkeeComponent napkeeButton btn">關於我們</button>
 	
-<div id="nap6" class="btn-group napkeeComponent napkeeButtonbar">
-<a class="btn" href="#" id="nap6i0">寶寶食譜</a><a class="btn" href="#" id="nap6i1">用品清單</a><a class="btn" href="#" id="nap6i2">健康須知</a><a class="btn" href="#" id="nap6i3">疫苗資訊</a><a class="btn" href="#" id="nap6i4">寶寶紀錄</a><a class="btn" href="#" id="nap6i5">App下載</a>
-</div>
-	
 <span id="nap7" class="napkeeComponent napkeeLabel ">Shin Hsin University &ndash; ICS100th &ndash; All Mommy Baby Home</span>
-	
-<div id="nap11" class="napkeeComponent napkeeWebcam"></div>
-	
-<div id="nap12" class="napkeeComponent napkeeWebcam"></div>
-	
-<div id="nap13" class="napkeeComponent napkeeWebcam"></div>
-	
-<div id="nap14" class="napkeeComponent napkeeWebcam"></div>
-	
-<div id="nap15" class="napkeeComponent napkeeWebcam"></div>
 	
 <div id="nap16" class="napkeeComponent napkeeVideoplayer"></div>
 	
 <span id="nap17" class="napkeeComponent napkeeTitle">All Mommy Baby Home</span>
+	
+<div id="nap18" class="napkeeComponent napkeeCoverflow"></div>
+	
+<div id="nap19" class="btn-group napkeeComponent napkeeButtonbar">
+<a class="btn" href="#" id="nap19i0">健康須知</a><a class="btn" href="#" id="nap19i1">疫苗資訊</a><a class="btn" href="#" id="nap19i2">寶寶食譜</a><a class="btn" href="#" id="nap19i3">用品清單</a><a class="btn" href="#" id="nap19i4">寶寶記錄</a><a class="btn" href="#" id="nap19i5">App下載</a>
+</div>
 	
 	
     <script type="text/javascript" charset="utf-8">
@@ -331,69 +291,12 @@ $("#nap5").click(function(event){
 
 });
 	
-
-$("#nap6").click(function(event){
-});
-
-$("#nap6i0").click(function(event){
-	showMockup('Recipe.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap6i1").click(function(event){
-	showMockup('List.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap6i2").click(function(event){
-	showMockup('HealthGrowth.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap6i3").click(function(event){
-	showMockup('VaccineMap.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap6i4").click(function(event){
-	showMockup('Recordinput1.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap6i5").click(function(event){
-	showMockup('Appdownload.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-	
 $("#nap7").click(function(event){
 	
 	event.stopPropagation();
 	event.preventDefault();
 
 });
-	
-	flashembed("nap11", "http://www.napkee.com/components/NapkeeHostedCam/NapkeeHostedCam.swf");
-	
-	flashembed("nap12", "http://www.napkee.com/components/NapkeeHostedCam/NapkeeHostedCam.swf");
-	
-	flashembed("nap13", "http://www.napkee.com/components/NapkeeHostedCam/NapkeeHostedCam.swf");
-	
-	flashembed("nap14", "http://www.napkee.com/components/NapkeeHostedCam/NapkeeHostedCam.swf");
-	
-	flashembed("nap15", "http://www.napkee.com/components/NapkeeHostedCam/NapkeeHostedCam.swf");
 	
 	flashembed("nap16", "http://www.napkee.com/components/NapkeeHostedVideo/NapkeeHostedVideo.swf");
 	
@@ -403,6 +306,55 @@ $("#nap17").click(function(event){
 	event.preventDefault();
 
 });
+	
+		flashembed("nap18", "http://www.napkee.com/components/NapkeeHostedCoverflow/NapkeeHostedCoverflow.swf?s=true");
+	
+
+$("#nap19").click(function(event){
+});
+
+$("#nap19i0").click(function(event){
+	showMockup('HealthGrowth.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap19i1").click(function(event){
+	showMockup('VaccineMap.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap19i2").click(function(event){
+	showMockup('Recipe.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap19i3").click(function(event){
+	showMockup('List.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap19i4").click(function(event){
+	showMockup('Recordinput1.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap19i5").click(function(event){
+	showMockup('Appdownload.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
 	
 		});
 	</script>

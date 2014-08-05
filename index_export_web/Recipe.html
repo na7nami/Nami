@@ -330,32 +330,12 @@
 	border:0px solid;
 }
 	
-#nap44{
-	left:51px;
-	top:357px;
-	width:960px;
-	height:50px;
-	z-index:15;
-	font-size: 20px;
-	font-style:normal;
-	font-weight:normal;
-	text-decoration:none;
-}
-#nap44 li {
-	width:134px;
-	height:50px;
-	line-height:50px;
-}
-#nap44 li a{
-	text-decoration:none;
-}
-	
 #nap45{
 	left:691px;
 	top:462px;
 	width:200px;
 	height:200px;
-	z-index:16;
+	z-index:15;
 	background:url('images/semitransparent.png');
 	border:0px solid;
 }
@@ -365,7 +345,7 @@
 	top:711px;
 	width:200px;
 	height:200px;
-	z-index:17;
+	z-index:16;
 	background:url('images/semitransparent.png');
 	border:0px solid;
 }
@@ -375,7 +355,7 @@
 	top:711px;
 	width:200px;
 	height:200px;
-	z-index:18;
+	z-index:17;
 	background:url('images/semitransparent.png');
 	border:0px solid;
 }
@@ -385,7 +365,7 @@
 	top:711px;
 	width:200px;
 	height:200px;
-	z-index:19;
+	z-index:18;
 	background:url('images/semitransparent.png');
 	border:0px solid;
 }
@@ -395,7 +375,7 @@
 	top:965px;
 	width:200px;
 	height:200px;
-	z-index:20;
+	z-index:19;
 	background:url('images/semitransparent.png');
 	border:0px solid;
 }
@@ -405,7 +385,7 @@
 	top:965px;
 	width:200px;
 	height:200px;
-	z-index:21;
+	z-index:20;
 	background:url('images/semitransparent.png');
 	border:0px solid;
 }
@@ -415,7 +395,7 @@
 	top:965px;
 	width:200px;
 	height:200px;
-	z-index:22;
+	z-index:21;
 	background:url('images/semitransparent.png');
 	border:0px solid;
 }
@@ -423,7 +403,7 @@
 #nap52{
 	left:785px;
 	top:92px;
-	z-index:23;
+	z-index:22;
 }
 
 #nap52.napkee {
@@ -439,7 +419,7 @@
 #nap53{
 	left:854px;
 	top:92px;
-	z-index:24;
+	z-index:23;
 }
 
 #nap53.napkee {
@@ -455,7 +435,7 @@
 #nap54{
 	left:920px;
 	top:92px;
-	z-index:25;
+	z-index:24;
 }
 
 #nap54.napkee {
@@ -473,13 +453,33 @@
 	top:101px;
 	width:327px;
 	height:35px;
-	z-index:26;
+	z-index:25;
 	font-size: 32px;
 	font-style:normal;
 	font-weight:normal;
 	text-decoration:none;
 	text-align:center;
 	color:#000000;
+}
+	
+#nap56{
+	left:51px;
+	top:353px;
+	width:960px;
+	height:50px;
+	z-index:26;
+	font-size: 20px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+#nap56 li {
+	width:134px;
+	height:50px;
+	line-height:50px;
+}
+#nap56 li a{
+	text-decoration:none;
 }
 	
 	</style>
@@ -625,10 +625,6 @@
 	
 <div id="nap42" class="napkeeComponent napkeeModalscreen"></div>
 	
-<div id="nap44" class="btn-group napkeeComponent napkeeButtonbar">
-<a class="btn" href="#" id="nap44i0">寶寶食譜</a><a class="btn" href="#" id="nap44i1">用品清單</a><a class="btn" href="#" id="nap44i2">健康須知</a><a class="btn" href="#" id="nap44i3">疫苗資訊</a><a class="btn" href="#" id="nap44i4">寶寶紀錄</a><a class="btn" href="#" id="nap44i5">App下載</a>
-</div>
-	
 <div id="nap45" class="napkeeComponent napkeeModalscreen"></div>
 	
 <div id="nap46" class="napkeeComponent napkeeModalscreen"></div>
@@ -650,6 +646,10 @@
 <button id="nap54" type="button" class="napkeeComponent napkeeButton btn">關於我們</button>
 	
 <span id="nap55" class="napkeeComponent napkeeTitle">All Mommy Baby Home</span>
+	
+<div id="nap56" class="btn-group napkeeComponent napkeeButtonbar">
+<a class="btn" href="#" id="nap56i0">健康須知</a><a class="btn" href="#" id="nap56i1">疫苗資訊</a><a class="btn" href="#" id="nap56i2">寶寶食譜</a><a class="btn" href="#" id="nap56i3">用品清單</a><a class="btn" href="#" id="nap56i4">寶寶記錄</a><a class="btn" href="#" id="nap56i5">App下載</a>
+</div>
 	
 	
     <script type="text/javascript" charset="utf-8">
@@ -802,53 +802,6 @@ $("#nap42").click(function(event){
 
 });
 	
-
-$("#nap44").click(function(event){
-});
-
-$("#nap44i0").click(function(event){
-	showMockup('Recipe.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap44i1").click(function(event){
-	showMockup('List.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap44i2").click(function(event){
-	showMockup('HealthGrowth.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap44i3").click(function(event){
-	showMockup('VaccineMap.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap44i4").click(function(event){
-	showMockup('Recordinput1.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap44i5").click(function(event){
-	showMockup('Appdownload.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-	
 $("#nap45").click(function(event){
 	showMockup('Recipecontent.html');
 	event.stopPropagation();
@@ -925,6 +878,53 @@ $("#nap55").click(function(event){
 	event.preventDefault();
 
 });
+	
+
+$("#nap56").click(function(event){
+});
+
+$("#nap56i0").click(function(event){
+	showMockup('HealthGrowth.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap56i1").click(function(event){
+	showMockup('VaccineMap.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap56i2").click(function(event){
+	showMockup('Recipe.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap56i3").click(function(event){
+	showMockup('List.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap56i4").click(function(event){
+	showMockup('Recordinput1.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap56i5").click(function(event){
+	showMockup('Appdownload.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
 	
 		});
 	</script>

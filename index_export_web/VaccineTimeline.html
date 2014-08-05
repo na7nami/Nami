@@ -71,8 +71,8 @@
 }
 	
 #nap17{
-	left:531px;
-	top:396px;
+	left:205px;
+	top:395px;
 	width:181px;
 	height:45px;
 	z-index:3;
@@ -116,30 +116,10 @@
 	text-align:left;
 }
 	
-#nap19{
-	left:50px;
-	top:353px;
-	width:960px;
-	height:50px;
-	z-index:5;
-	font-size: 20px;
-	font-style:normal;
-	font-weight:normal;
-	text-decoration:none;
-}
-#nap19 li {
-	width:134px;
-	height:50px;
-	line-height:50px;
-}
-#nap19 li a{
-	text-decoration:none;
-}
-	
 #nap22{
 	left:479px;
 	top:176px;
-	z-index:6;
+	z-index:5;
 }
 
 #nap22.napkee {
@@ -154,7 +134,7 @@
 #nap24{
 	left:785px;
 	top:92px;
-	z-index:7;
+	z-index:6;
 }
 
 #nap24.napkee {
@@ -170,7 +150,7 @@
 #nap25{
 	left:854px;
 	top:92px;
-	z-index:8;
+	z-index:7;
 }
 
 #nap25.napkee {
@@ -186,7 +166,7 @@
 #nap26{
 	left:920px;
 	top:92px;
-	z-index:9;
+	z-index:8;
 }
 
 #nap26.napkee {
@@ -204,13 +184,33 @@
 	top:101px;
 	width:327px;
 	height:35px;
-	z-index:10;
+	z-index:9;
 	font-size: 32px;
 	font-style:normal;
 	font-weight:normal;
 	text-decoration:none;
 	text-align:center;
 	color:#000000;
+}
+	
+#nap28{
+	left:51px;
+	top:353px;
+	width:960px;
+	height:50px;
+	z-index:10;
+	font-size: 20px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+#nap28 li {
+	width:134px;
+	height:50px;
+	line-height:50px;
+}
+#nap28 li a{
+	text-decoration:none;
 }
 	
 	</style>
@@ -250,7 +250,7 @@
 
 	
 <div id="nap17" class="btn-group napkeeComponent napkeeButtonbar">
-<a class="btn" href="#" id="nap17i0">地點查詢</a><a class="btn active" href="#" id="nap17i1">接種時程表</a>
+<a class="btn" href="#" id="nap17i0">地點查詢</a><a class="btn active" href="#" id="nap17i1">施打時程表</a>
 </div>
 	
 <img id="nap18" src="js/holder.js/960x210" class="napkeeComponent napkeeImage" />
@@ -263,10 +263,6 @@
 </table>
 
 	
-<div id="nap19" class="btn-group napkeeComponent napkeeButtonbar">
-<a class="btn" href="#" id="nap19i0">寶寶食譜</a><a class="btn" href="#" id="nap19i1">用品清單</a><a class="btn" href="#" id="nap19i2">健康須知</a><a class="btn" href="#" id="nap19i3">疫苗資訊</a><a class="btn" href="#" id="nap19i4">寶寶紀錄</a><a class="btn" href="#" id="nap19i5">App下載</a>
-</div>
-	
 <button id="nap22" class="napkeeComponent napkeeMultilineButton btn"> 
    <span>LOGO<br/><small>Home</small> 
 </button> 
@@ -278,6 +274,10 @@
 <button id="nap26" type="button" class="napkeeComponent napkeeButton btn">關於我們</button>
 	
 <span id="nap27" class="napkeeComponent napkeeTitle">All Mommy Baby Home</span>
+	
+<div id="nap28" class="btn-group napkeeComponent napkeeButtonbar">
+<a class="btn" href="#" id="nap28i0">健康須知</a><a class="btn" href="#" id="nap28i1">疫苗資訊</a><a class="btn" href="#" id="nap28i2">寶寶食譜</a><a class="btn" href="#" id="nap28i3">用品清單</a><a class="btn" href="#" id="nap28i4">寶寶記錄</a><a class="btn" href="#" id="nap28i5">App下載</a>
+</div>
 	
 	
     <script type="text/javascript" charset="utf-8">
@@ -340,53 +340,6 @@ $("#nap18").click(function(event){
 
 });
 	
-
-$("#nap19").click(function(event){
-});
-
-$("#nap19i0").click(function(event){
-	showMockup('Recipe.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap19i1").click(function(event){
-	showMockup('List.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap19i2").click(function(event){
-	showMockup('HealthGrowth.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap19i3").click(function(event){
-	showMockup('VaccineMap.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap19i4").click(function(event){
-	showMockup('Recordinput1.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap19i5").click(function(event){
-	showMockup('Appdownload.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-	
 $("#nap22").click(function(event){
 });
 	
@@ -417,6 +370,53 @@ $("#nap27").click(function(event){
 	event.preventDefault();
 
 });
+	
+
+$("#nap28").click(function(event){
+});
+
+$("#nap28i0").click(function(event){
+	showMockup('HealthGrowth.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap28i1").click(function(event){
+	showMockup('VaccineMap.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap28i2").click(function(event){
+	showMockup('Recipe.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap28i3").click(function(event){
+	showMockup('List.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap28i4").click(function(event){
+	showMockup('Recordinput1.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap28i5").click(function(event){
+	showMockup('Appdownload.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
 	
 		});
 	</script>

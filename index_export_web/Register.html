@@ -119,32 +119,12 @@
 }
 
 	
-#nap8{
-	left:52px;
-	top:352px;
-	width:960px;
-	height:50px;
-	z-index:6;
-	font-size: 20px;
-	font-style:normal;
-	font-weight:normal;
-	text-decoration:none;
-}
-#nap8 li {
-	width:134px;
-	height:50px;
-	line-height:50px;
-}
-#nap8 li a{
-	text-decoration:none;
-}
-	
 #nap9{
 	left:369px;
 	top:857px;
 	width:363.00000000000006px;
 	height:21px;
-	z-index:7;
+	z-index:6;
 	font-size: 14px;
 	font-style:normal;
 	font-weight:normal;
@@ -157,7 +137,7 @@
 	left:428px;
 	top:582px;
 	width:200px;
-	z-index:8;
+	z-index:7;
 	background-color:#FFFFFF;
 	color:#000000;
 	font-size: 14px;
@@ -171,7 +151,7 @@
 	left:428px;
 	top:628px;
 	width:200px;
-	z-index:9;
+	z-index:8;
 	background-color:#FFFFFF;
 	color:#000000;
 	font-size: 14px;
@@ -185,7 +165,7 @@
 	left:428px;
 	top:674px;
 	width:200px;
-	z-index:10;
+	z-index:9;
 	background-color:#FFFFFF;
 	color:#000000;
 	font-size: 14px;
@@ -199,7 +179,7 @@
 	left:428px;
 	top:490px;
 	width:200px;
-	z-index:11;
+	z-index:10;
 	background-color:#FFFFFF;
 	color:#000000;
 	font-size: 14px;
@@ -213,7 +193,7 @@
 	left:428px;
 	top:536px;
 	width:200px;
-	z-index:12;
+	z-index:11;
 	background-color:#FFFFFF;
 	color:#000000;
 	font-size: 14px;
@@ -226,7 +206,7 @@
 #nap15{
 	left:504px;
 	top:728px;
-	z-index:13;
+	z-index:12;
 }
 
 #nap15.napkee {
@@ -244,13 +224,41 @@
 	top:101px;
 	width:327px;
 	height:35px;
-	z-index:14;
+	z-index:13;
 	font-size: 32px;
 	font-style:normal;
 	font-weight:normal;
 	text-decoration:none;
 	text-align:center;
 	color:#000000;
+}
+	
+#nap17{
+	left:51px;
+	top:353px;
+	width:960px;
+	height:50px;
+	z-index:14;
+	font-size: 20px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+#nap17 li {
+	width:134px;
+	height:50px;
+	line-height:50px;
+}
+#nap17 li a{
+	text-decoration:none;
+}
+	
+#nap18{
+	left:643px;
+	top:586px;
+	width:164px;
+	height:56px;
+	z-index:15;
 }
 	
 	</style>
@@ -297,10 +305,6 @@
 	
 <button id="nap5" type="button" class="napkeeComponent napkeeButton btn">關於我們</button>
 	
-<div id="nap8" class="btn-group napkeeComponent napkeeButtonbar">
-<a class="btn" href="#" id="nap8i0">寶寶食譜</a><a class="btn" href="#" id="nap8i1">用品清單</a><a class="btn" href="#" id="nap8i2">健康須知</a><a class="btn" href="#" id="nap8i3">疫苗資訊</a><a class="btn" href="#" id="nap8i4">寶寶紀錄</a><a class="btn" href="#" id="nap8i5">App下載</a>
-</div>
-	
 <span id="nap9" class="napkeeComponent napkeeLabel ">Shin Hsin University &ndash; ICS100th &ndash; All Mommy Baby Home</span>
 	
 <input id="nap10" type="text" value="請輸入您的帳號(E&ndash;mail)" class="napkeeComponent napkeeTextinput" />
@@ -316,6 +320,12 @@
 <button id="nap15" type="button" class="napkeeComponent napkeeButton btn">確認</button>
 	
 <span id="nap16" class="napkeeComponent napkeeTitle">All Mommy Baby Home</span>
+	
+<div id="nap17" class="btn-group napkeeComponent napkeeButtonbar">
+<a class="btn" href="#" id="nap17i0">健康須知</a><a class="btn" href="#" id="nap17i1">疫苗資訊</a><a class="btn" href="#" id="nap17i2">寶寶食譜</a><a class="btn" href="#" id="nap17i3">用品清單</a><a class="btn" href="#" id="nap17i4">寶寶記錄</a><a class="btn" href="#" id="nap17i5">App下載</a>
+</div>
+	
+<div id="nap18" class="napkeeComponent napkeeTooltip" title="帳號即為您的email"></div>
 	
 	
     <script type="text/javascript" charset="utf-8">
@@ -369,53 +379,6 @@ $("#nap5").click(function(event){
 
 });
 	
-
-$("#nap8").click(function(event){
-});
-
-$("#nap8i0").click(function(event){
-	showMockup('Recipe.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap8i1").click(function(event){
-	showMockup('List.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap8i2").click(function(event){
-	showMockup('HealthGrowth.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap8i3").click(function(event){
-	showMockup('VaccineMap.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap8i4").click(function(event){
-	showMockup('Recordinput1.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap8i5").click(function(event){
-	showMockup('Appdownload.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-	
 $("#nap9").click(function(event){
 	
 	event.stopPropagation();
@@ -461,6 +424,58 @@ $("#nap16").click(function(event){
 	event.preventDefault();
 
 });
+	
+
+$("#nap17").click(function(event){
+});
+
+$("#nap17i0").click(function(event){
+	showMockup('HealthGrowth.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap17i1").click(function(event){
+	showMockup('VaccineMap.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap17i2").click(function(event){
+	showMockup('Recipe.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap17i3").click(function(event){
+	showMockup('List.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap17i4").click(function(event){
+	showMockup('Recordinput1.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap17i5").click(function(event){
+	showMockup('Appdownload.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+	
+	$("#nap18").tooltip({
+		trigger: "manual",
+		placement: "top"
+	}).tooltip('show');
 	
 		});
 	</script>

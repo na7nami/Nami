@@ -27,15 +27,16 @@ html {
 body {
   font-size: 16px;
   text-align: center;
+  background-color: #00FFCC;
 }
 
 h1 {
   /* 樣式 */
-  font-style: italic;
+  /*font-style: italic;*/
   /* 粗細 */
   font-weight: bold;
   /* 大小 */
-  font-size: 1.5em;
+  font-size: 2em;
   /* 行高 */
   line-height: 1.5;
   /* 字型 */
@@ -57,12 +58,25 @@ a {
    font-size: 16px;
    list-style: none;
    display: inline-block;
-   background: #ccc;
+   background: #FFF;
    padding: 15px;
-   margin: 55px 20px;
+   margin: 10px 20px;
 
-   border: 5px solid #ccc;
-   border-radius: 10px;
+   border: 5px solid #FFF;
+   border-radius: 15px 5px;
+}
+
+
+.btn {
+  border: 0;
+  background: #26ae90;
+  color: #fff;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+
+.btn.active {
+  background: #dd6149;
 }
 
 .i {
@@ -77,6 +91,10 @@ a {
 
 }
 
+.email {
+   margin: 20px;
+}
+
 .link {
    list-style: none;
    display: inline;
@@ -84,9 +102,28 @@ a {
 
    font-size: 16px;
 
-   background: #ccc000;
    padding: 15px;
    margin: 55px 20px;
+}
+
+.email i {
+      font-size: 28px;
+      padding-top: 12px;
+}
+
+.nami{
+/*   border: 5px solid #FFF;*/
+   border-radius: 55px;
+ }
+
+.img-wrapper li{
+  display: inline;
+  padding: 5px 5px;
+  background-color: #FFF;
+}
+
+.fa-facebook, .fa-envelope{
+  margin: 5px 10px 5px 0px;
 }
 
 /*

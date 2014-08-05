@@ -92,31 +92,11 @@
 	width:216px;
 	height:133px;
 	z-index:4;
-	font-size: 28px;
+	font-size: 16px;
 	font-style:normal;
 	font-weight:normal;
 	text-decoration:none;
 	background-color:#DACE5F;
-}
-	
-#nap9{
-	left:52px;
-	top:352px;
-	width:960px;
-	height:50px;
-	z-index:5;
-	font-size: 20px;
-	font-style:normal;
-	font-weight:normal;
-	text-decoration:none;
-}
-#nap9 li {
-	width:134px;
-	height:50px;
-	line-height:50px;
-}
-#nap9 li a{
-	text-decoration:none;
 }
 	
 #nap10{
@@ -124,7 +104,7 @@
 	top:857px;
 	width:363.00000000000006px;
 	height:21px;
-	z-index:6;
+	z-index:5;
 	font-size: 14px;
 	font-style:normal;
 	font-weight:normal;
@@ -136,7 +116,7 @@
 #nap11{
 	left:785px;
 	top:92px;
-	z-index:7;
+	z-index:6;
 }
 
 #nap11.napkee {
@@ -152,7 +132,7 @@
 #nap12{
 	left:854px;
 	top:92px;
-	z-index:8;
+	z-index:7;
 }
 
 #nap12.napkee {
@@ -168,7 +148,7 @@
 #nap13{
 	left:920px;
 	top:92px;
-	z-index:9;
+	z-index:8;
 }
 
 #nap13.napkee {
@@ -186,13 +166,33 @@
 	top:101px;
 	width:327px;
 	height:35px;
-	z-index:10;
+	z-index:9;
 	font-size: 32px;
 	font-style:normal;
 	font-weight:normal;
 	text-decoration:none;
 	text-align:center;
 	color:#000000;
+}
+	
+#nap15{
+	left:51px;
+	top:353px;
+	width:960px;
+	height:50px;
+	z-index:10;
+	font-size: 20px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+#nap15 li {
+	width:134px;
+	height:50px;
+	line-height:50px;
+}
+#nap15 li a{
+	text-decoration:none;
 }
 	
 	</style>
@@ -239,10 +239,6 @@
 	
 <div id="nap7" class="napkeeComponent napkeeStickynote">App 功能介紹</div>
 	
-<div id="nap9" class="btn-group napkeeComponent napkeeButtonbar">
-<a class="btn" href="#" id="nap9i0">寶寶食譜</a><a class="btn" href="#" id="nap9i1">用品清單</a><a class="btn" href="#" id="nap9i2">健康須知</a><a class="btn" href="#" id="nap9i3">疫苗資訊</a><a class="btn" href="#" id="nap9i4">寶寶紀錄</a><a class="btn" href="#" id="nap9i5">App下載</a>
-</div>
-	
 <span id="nap10" class="napkeeComponent napkeeLabel ">Shin Hsin University &ndash; ICS100th &ndash; All Mommy Baby Home</span>
 	
 <button id="nap11" type="button" class="napkeeComponent napkeeButton btn">註冊</button>
@@ -252,6 +248,10 @@
 <button id="nap13" type="button" class="napkeeComponent napkeeButton btn">關於我們</button>
 	
 <span id="nap14" class="napkeeComponent napkeeTitle">All Mommy Baby Home</span>
+	
+<div id="nap15" class="btn-group napkeeComponent napkeeButtonbar">
+<a class="btn" href="#" id="nap15i0">健康須知</a><a class="btn" href="#" id="nap15i1">疫苗資訊</a><a class="btn" href="#" id="nap15i2">寶寶食譜</a><a class="btn" href="#" id="nap15i3">用品清單</a><a class="btn" href="#" id="nap15i4">寶寶記錄</a><a class="btn" href="#" id="nap15i5">App下載</a>
+</div>
 	
 	
     <script type="text/javascript" charset="utf-8">
@@ -289,53 +289,6 @@ $("#nap8").click(function(event){
 	
 $("#nap7").draggable();
 	
-
-$("#nap9").click(function(event){
-});
-
-$("#nap9i0").click(function(event){
-	showMockup('Recipe.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap9i1").click(function(event){
-	showMockup('List.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap9i2").click(function(event){
-	showMockup('HealthGrowth.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap9i3").click(function(event){
-	showMockup('VaccineMap.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap9i4").click(function(event){
-	showMockup('Recordinput1.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-$("#nap9i5").click(function(event){
-	showMockup('Appdownload.html');
-	event.stopPropagation();
-	event.preventDefault();
-
-});
-
-	
 $("#nap10").click(function(event){
 	
 	event.stopPropagation();
@@ -370,6 +323,53 @@ $("#nap14").click(function(event){
 	event.preventDefault();
 
 });
+	
+
+$("#nap15").click(function(event){
+});
+
+$("#nap15i0").click(function(event){
+	showMockup('HealthGrowth.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap15i1").click(function(event){
+	showMockup('VaccineMap.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap15i2").click(function(event){
+	showMockup('Recipe.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap15i3").click(function(event){
+	showMockup('List.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap15i4").click(function(event){
+	showMockup('Recordinput1.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap15i5").click(function(event){
+	showMockup('Appdownload.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
 	
 		});
 	</script>
